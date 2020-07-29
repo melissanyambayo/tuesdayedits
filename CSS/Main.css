@@ -1,0 +1,543 @@
+ h1 {
+    color: black;
+    background-color: pink;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-shadow:2px 2px whitesmoke;
+}
+
+p {
+  color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+h3 {
+  color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+h4 {
+  color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+
+
+ul {
+  list-style-type: square;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.indextext {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:2px 2px  pink;
+  font-size: 20px; 
+}
+
+.contactustext {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:2px 2px  pink;
+  font-stretch: expanded;
+  font-size: 20px;  
+}
+.responsive {
+  padding: 0 6px; 
+  float: left;
+  width: 24.99999%;
+} 
+
+.gallerytext {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:2px 2px  pink;
+  font-size: 20px; 
+}
+
+div.gallery{
+    border: 5px solid pink;
+}
+
+div.gallery:hover {
+   border: 5px solid green; 
+}
+
+div.gallery img {
+   height: auto;
+   width: 100%
+
+}
+
+div.description {
+   padding: 15px;
+   text-align: center;
+}
+
+
+/* Navbar container */
+.navbar {
+   overflow: hidden;
+   background-color: #333;
+   font-family: Arial;
+ }
+ 
+ /* Links inside the navbar */
+ .navbar a {
+   float: left;
+   font-size: 16px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ /* The dropdown container */
+ .dropdown {
+   float: left;
+   overflow: hidden;
+ }
+ 
+ /* Dropdown button */
+ .dropdown .dropbtn {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit; /* Important for vertical align on mobile phones */
+   margin: 0; /* Important for vertical align on mobile phones */
+ }
+ 
+ /* Add a pink background color to navbar links on hover */
+ .navbar a:hover, .dropdown:hover .dropbtn {
+   background-color: pink;
+ }
+ 
+ /* Dropdown content (hidden by default) */
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ /* Links inside the dropdown */
+ .dropdown-content a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ /* Add a grey background color to dropdown links on hover */
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+ 
+ /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+
+ ul {
+  list-style-type: square;
+  padding: 30px,  
+ }
+ 
+/* this is the css for the gallery - I have attempted to make them look like polaroids */
+
+.polaroid-images a
+{
+    background: white;
+    display: inline;
+    float: left;
+    margin: 0 15px 30px;
+    padding: 10px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    z-index:0;
+        position:relative;
+}
+
+polaroid-images img { 
+  display: block; 
+  width: inherit; 
+  align-content: space-between;
+  align-content: center;
+  content: attr(title);
+}
+/* This is to make the images responsive when you hover on them */ 
+
+.polaroid-images a:hover{
+  -webkit-transform: rotate(0deg); 
+  -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+  -webkit-transform: scale(1.2); 
+  -moz-transform: scale(1.2);
+      transform: scale(1.2);
+  z-index:10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+      box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+
+/* This is the css of the about us page images*/
+.about_Us a{
+  background: white;
+  display: inline;
+  margin: 0px 130px 60px;
+  padding: 10px 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+  z-index:0;
+      position:relative;
+  
+}
+.about_Us img{ 
+  display: block; 
+  width: inherit; 
+}
+.text_Us{
+  background: white;
+  display:inline;
+  float:left;
+  text-align: left;
+  max-width: 200px;
+  margin: 20px 130px 60px;
+
+}
+
+/* This is the CSS to create a sticky footer, so it will stay at the bottom of the page and won't move */ 
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: pink;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:2px 2px whitesmoke;
+}
+
+/* This is the design CSS for the travel guides*/
+/*AUSTRALIA*/
+.guide_Australia{
+  background-color: lightgoldenrodyellow;  
+  background-size: auto;
+}
+.guide_Australia img{
+  margin-left: 30px;
+}
+.pictures_Australia img{
+margin: 0px 80px 0px;
+}
+/*BRAZIL*/
+.guide_Brazil{
+  background-color: lightgreen;
+  background-size: auto;
+}
+.guide_Brazil img{
+  margin-left: 30px;
+}
+.pictures_Brazil img{
+  margin: 0px 150px 0px;
+  margin-right: 100px;
+}
+/*JAPAN*/
+.guide_Japan{
+  background-color: rgb(252, 158, 158);
+  background-size: auto;
+}
+
+.guide_Japan img{
+  margin:30px;
+}
+.pictures_Japan{
+  margin:0px 250px 0px;
+  margin-right: 200px;
+}
+
+/*UK*/
+.guide_UK{
+  background-color: rgb(145, 180, 245);
+  background-size: auto;
+}
+
+.guide_UK img{
+  margin: 30px;
+}
+
+.pictures_UK{
+  margin:0px 200px 0px;
+  
+}
+/*USA*/
+.guide_USA{
+ background-color: rgb(248, 156, 156);
+ background-size: auto;
+}
+.guide_USA img{
+  margin:30px;
+}
+.pictures_USA{
+  margin-left: 200px;
+
+}
+/*Zimbabwe*/
+.guide_Zim{
+  background-color: rgb(169, 190, 132);
+  background-size: auto;
+}
+
+.guide_Zim{
+  margin:30px;
+}
+
+
+/*EDITS FOR ALL THE TRAVEL GUIDES*/
+body h2{
+  text-align:center;
+}
+
+body p{
+  max-width: 600px;
+  text-align: justify;
+  margin-left: 30px;
+}
+
+.form-group {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form-group form-check {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.travelguideimages {
+  background: white;
+    display: inline;
+    margin: 0 15px 30px;
+    padding: 10px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    z-index:0;
+    height: auto; 
+    
+}
+
+.video {
+  padding: 30px;
+  align: center;
+}
+
+
+.myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color:pink; /* Add a dark-grey background on hover */
+}
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="img_woods_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img_5terre_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+Step 2) Add CSS:
+Style the image gallery, next and previous buttons, the caption text and the dots:
+
+Example
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
